@@ -1,0 +1,13 @@
+[build]
+  command = "echo 'running'"
+  publish = "public/"
+
+[[headers]]
+  for = "/js-whitelist/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "https://cors-example.netlify.app"
+
+[[headers]]
+  for = "/js-public/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
