@@ -1,7 +1,13 @@
 [build]
-  command = "echo 'running'"
+  command = "bash install.sh"
   publish = "public/"
 
+# [dev]
+  # framework = "#custom"
+  # command = "bash install.sh"
+  # publish = "public/"
+  # targetPort = 3999
+  
 [[headers]]
   for = "/js-whitelist/*"
   [headers.values]
